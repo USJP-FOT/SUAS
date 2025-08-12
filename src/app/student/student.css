@@ -1,0 +1,107 @@
+/* Page background should already be dark via your theme; these just refine it */
+.student-page {
+  background-color: #0f1113; /* optional if your app root is already dark */
+}
+
+/* Dark cards with subtle border to match your mock */
+.card-dark {
+  background: #121416;
+  border: 1px solid #2b2f36;
+  border-radius: 8px;
+}
+
+/* Inputs styled like outlined fields on dark bg */
+.form-control-dark,
+.form-select-dark {
+  background-color: #121416;
+  color: #eaecef;
+  border: 1px solid #3b4048;
+  border-radius: 8px;
+}
+
+.form-control-dark::placeholder {
+  color: #9aa0a6;
+}
+
+.form-control-dark:focus,
+.form-select-dark:focus {
+  background-color: #14171a;
+  color: #fff;
+  border-color: #6c757d;
+  box-shadow: 0 0 0 0.2rem rgba(108,117,125,.15);
+}
+
+/* “Search By ID” chip-like label in input-group */
+.label-chip {
+  background: transparent;
+  color: #eaecef;
+  border: 1px solid #3b4048;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Small chips used for section headings under the list panel */
+.chip {
+  display: inline-block;
+  width: 100%;
+  padding: .6rem .9rem;
+  color: #eaecef;
+  background: #121416;
+  border: 1px solid #3b4048;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Custom chevron for the select to mimic your screenshot */
+.select-chevron {
+  position: relative;
+}
+.select-chevron::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #eaecef;
+  border-bottom: 2px solid #eaecef;
+  transform: translateY(-60%) rotate(45deg);
+  pointer-events: none;
+}
+.form-select-dark {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 2.2rem; /* room for chevron */
+}
+
+/* Table tweaks */
+.table.student-table {
+  --bs-table-bg: #121416;
+  --bs-table-striped-bg: #171a1e;
+  --bs-table-striped-color: #eaecef;
+  --bs-table-color: #eaecef;
+  border-color: #2b2f36;
+}
+.table.student-table th,
+.table.student-table td {
+  border-color: #2b2f36;
+}
+
+/* Buttons on dark */
+.btn-outline-light {
+  border-color: #6c757d;
+}
+.btn-outline-light:hover {
+  background-color: #6c757d;
+  color: #111;
+}
+
+.btn-outline-danger {
+  border-color: #dc3545;
+  color: #ff6b6b;
+}
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}

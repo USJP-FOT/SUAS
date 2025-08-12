@@ -1,0 +1,116 @@
+/* Page */
+.locker-page {
+  background: #0f1113;     /* keep consistent with your app */
+  color: #eaecef;
+}
+
+.title {
+  margin: 20px 0 16px;
+}
+
+/* Two-column layout (form + table) */
+.locker-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Rounded form card (matches your screenshot) */
+.pill-card {
+  background: #121416;
+  border: 1px solid #2b2f36;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs */
+.control-dark {
+  width: 100%;
+  background: #15181b;
+  color: #eaecef;
+  border: 1px solid #3b4048;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+.control-dark::placeholder { color: #9aa0a6; }
+.control-dark:focus {
+  border-color: #6c757d;
+  box-shadow: 0 0 0 0.15rem rgba(108,117,125,.18);
+}
+
+/* Buttons */
+.btn-soft {
+  width: 100%;
+  background: #1a1d21;
+  color: #eaecef;
+  border: 1px solid #3b4048;
+  border-radius: 10px;
+  padding: 9px 12px;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+.btn-soft:hover { background: #262a2f; border-color: #555c66; }
+.btn-soft.wide { width: 100%; }
+.btn-xs { padding: 6px 10px; border-radius: 8px; }
+
+/* Two buttons side by side */
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Right panel */
+.panel {
+  background: #121416;
+  border: 1px solid #2b2f36;
+  border-radius: 8px;
+  padding: 14px;
+}
+.panel-header {
+  font-size: 0.95rem;
+  color: #cfd3d7;
+  margin-bottom: 10px;
+}
+
+/* Simple CSS “table” */
+.table { width: 100%; }
+.thead, .trow {
+  display: grid;
+  grid-template-columns: 100px 1fr 160px 120px;
+  gap: 16px;
+  align-items: center;
+}
+.thead {
+  color: #b9bec4;
+  border-bottom: 1px solid #2b2f36;
+  padding: 8px 0 10px;
+}
+.trow {
+  padding: 10px 0;
+  border-bottom: 1px dashed #2b2f36;
+}
+.th, .td { min-width: 0; }
+.text-end { text-align: right; }
+
+/* Width helpers to mirror grid sizes */
+.w-100 { width: 100px; }
+.w-120 { width: 120px; }
+.w-160 { width: 160px; }
+
+/* Responsive: stack below 900px */
+@media (max-width: 900px) {
+  .locker-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .thead, .trow {
+    grid-template-columns: 70px 1fr 110px 100px;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,89 @@
+<div class="student-page container-fluid py-4">
+  <h5 class="text-light mb-4">Student Management</h5>
+
+  <!-- Create / Edit Form -->
+  <form class="card-dark p-3 mb-4">
+    <!-- Name -->
+    <div class="mb-3">
+      <input type="text" class="form-control form-control-dark" placeholder="Name">
+    </div>
+
+    <!-- Phone + Academic Year -->
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control form-control-dark" placeholder="Phone">
+      </div>
+      <div class="col-md-6 position-relative">
+        <div class="select-chevron">
+          <select class="form-select form-select-dark">
+            <option selected>Academic Year</option>
+            <option>2023/24</option>
+            <option>2024/25</option>
+            <option>2025/26</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-1">
+      <input type="email" class="form-control form-control-dark" placeholder="Email Address">
+    </div>
+  </form>
+
+  <!-- List / Search Panel -->
+  <div class="card-dark p-3">
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <span class="badge bg-secondary-subtle text-light fw-normal me-auto">View Student</span>
+
+      <div class="input-group search-id" style="max-width: 260px;">
+        <span class="input-group-text label-chip">Search By ID</span>
+        <input type="text" class="form-control form-control-dark" placeholder="e.g. 1024">
+      </div>
+
+      <button type="button" class="btn btn-outline-light btn-sm">Search</button>
+      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+    </div>
+
+
+
+    <!-- Data Table -->
+    <div class="table-responsive">
+      <table class="table table-dark table-striped align-middle mb-0 student-table">
+        <thead>
+          <tr>
+            <th style="width: 100px;">ID</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th style="width: 160px;">Academic Year</th>
+            <th style="width: 160px;">Phone</th>
+            <th style="width: 120px;" class="text-end">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- sample rows -->
+          <tr>
+            <td>1</td>
+            <td>Ava Stone</td>
+            <td>avaschool.edu</td>
+            <td>2024/25</td>
+            <td>555-0101</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-light">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Liam Park</td>
+            <td>liamschool.edu</td>
+            <td>2023/24</td>
+            <td>555-0102</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-light">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
