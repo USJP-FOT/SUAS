@@ -4,6 +4,9 @@
   </div>
   
   <div class="content-area">
+    <button class="theme-toggle" (click)="toggleTheme()">
+      {{ isDark ? 'Light Mode' : 'Dark Mode' }}
+    </button>
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global theme variables */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --sidebar-bg: #e9ecef;
+  --sidebar-btn-bg: #ffffff;
+  --sidebar-btn-color: #212529;
+  --sidebar-btn-hover-bg: #d0d8e4;
+  --border-color: #ced4da;
+  --accent-color: #4e79ff;
+}
+
+/* Dark theme overrides */
+.dark-theme {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --sidebar-bg: #111;
+  --sidebar-btn-bg: #1a1c1f;
+  --sidebar-btn-color: #e0e0e0;
+  --sidebar-btn-hover-bg: #2a2d31;
+  --border-color: #333;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+}
+
+.theme-toggle {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.theme-toggle:hover {
+  opacity: 0.85;
+}
