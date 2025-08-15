@@ -1,0 +1,79 @@
+<div class="page">
+  <div class="title">Trash Bin</div>
+
+  <!-- Actions / Search -->
+  <div class="actions">
+    <label class="search">
+      <input type="search" placeholder="Search by Bin ID or Place" aria-label="Search trash bins" />
+      <button type="button" class="btn-outline btn-outline-ghost">Search</button>
+    </label>
+  </div>
+
+  <!-- Form Card -->
+  <form class="card form-card" aria-label="Trash bin form">
+    <div class="form-grid">
+      <label class="field">
+        <span class="label">Bin ID</span>
+        <input type="text" placeholder="e.g., B004" required />
+      </label>
+
+      <label class="field">
+        <span class="label">Place</span>
+        <input type="text" placeholder="e.g., Auditorium" required />
+      </label>
+
+      <label class="field">
+        <span class="label">Percentage</span>
+        <input type="number" min="0" max="100" placeholder="0–100" required />
+      </label>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn-outline btn-outline-primary">Save</button>
+      <button type="button" class="btn-outline btn-outline-warning">Update</button>
+      <button type="button" class="btn-outline btn-outline-danger">Delete</button>
+      <button type="reset" class="btn-outline btn-outline-ghost">Clear</button>
+    </div>
+  </form>
+
+  <!-- Table Card -->
+  <div class="card table-card" aria-label="Trash bin list">
+    <div class="table-head">
+      <div class="cell">Bin ID</div>
+      <div class="cell">Place</div>
+      <div class="cell">Percentage</div>
+      <div class="cell actions-col">Actions</div>
+    </div>
+
+    <!-- Sample rows -->
+    <div class="row">
+      <div class="cell">B001</div>
+      <div class="cell">Cafeteria</div>
+      <div class="cell">70%</div>
+      <div class="cell actions-col">
+        <button type="button" class="btn-outline btn-outline-ghost tiny">Edit</button>
+        <button type="button" class="btn-outline btn-outline-danger tiny">Delete</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell">B002</div>
+      <div class="cell">Library</div>
+      <div class="cell">45%</div>
+      <div class="cell actions-col">
+        <button type="button" class="btn-outline btn-outline-ghost tiny">Edit</button>
+        <button type="button" class="btn-outline btn-outline-danger tiny">Delete</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell">B003</div>
+      <div class="cell">Parking Lot</div>
+      <div class="cell">90%</div>
+      <div class="cell actions-col">
+        <button type="button" class="btn-outline btn-outline-ghost tiny">Edit</button>
+        <button type="button" class="btn-outline btn-outline-danger tiny">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

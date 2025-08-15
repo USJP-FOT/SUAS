@@ -6,7 +6,7 @@ import { Locker } from "./locker/locker";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Sidebar, Student, Locker],
+  imports: [RouterOutlet, Sidebar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
