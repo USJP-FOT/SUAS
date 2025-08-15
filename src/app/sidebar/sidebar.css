@@ -1,7 +1,7 @@
 .sidebar {
-  background: #111;
-  text-decoration: none;  
-  height: 100vh;
+  background: var(--suas-blue);
+  text-decoration: none;
+  height: 100%;
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
@@ -9,18 +9,29 @@
 }
 
 .sidebar-btn {
-  background: #1a1c1f;
-  color: #e0e0e0;
+  background: transparent;
+  color: var(--suas-cream);
   padding: 10px 15px;
-  text-decoration: none;  
+  text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
-  /* transition: background 0.2s ease; */
   font-size: 14px;
+  transition: background 0.2s ease;
 }
 
 .sidebar-btn:hover {
-  background: #2a2d31;
-  text-decoration: none;  
+  background: var(--suas-red);
   color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex-direction: row;
+    height: auto;
+  }
+  .sidebar-btn {
+    flex: 1;
+    text-align: center;
+  }
 }

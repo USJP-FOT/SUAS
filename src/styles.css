@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global theme variables */
+:root {
+  /* Primary palette */
+  --suas-blue: #2c4f63;
+  --suas-cream: #e4debf;
+  --suas-red: #d9514c;
+  --suas-orange: #f9b652;
+
+  /* Semantic colors */
+  --suas-bg: var(--suas-cream);
+  --suas-text: var(--suas-blue);
+  --suas-surface: #ffffff;
+  --suas-border: #d9d9d9;
+}
+
+body {
+  margin: 0;
+  background: var(--suas-bg);
+  color: var(--suas-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu,
+    Cantarell, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}

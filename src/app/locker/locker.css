@@ -1,7 +1,7 @@
 /* Page */
 .locker-page {
-  background: #0f1113;     /* keep consistent with your app */
-  color: #eaecef;
+  background: var(--suas-bg);
+  color: var(--suas-text);
 }
 
 .title {
@@ -18,8 +18,8 @@
 
 /* Rounded form card (matches your screenshot) */
 .pill-card {
-  background: #121416;
-  border: 1px solid #2b2f36;
+  background: var(--suas-surface);
+  border: 1px solid var(--suas-border);
   border-radius: 20px;
   padding: 18px;
   display: flex;
@@ -30,31 +30,31 @@
 /* Inputs */
 .control-dark {
   width: 100%;
-  background: #15181b;
-  color: #eaecef;
-  border: 1px solid #3b4048;
+  background: var(--suas-surface);
+  color: var(--suas-text);
+  border: 1px solid var(--suas-border);
   border-radius: 10px;
   padding: 10px 12px;
   outline: none;
 }
-.control-dark::placeholder { color: #9aa0a6; }
+.control-dark::placeholder { color: #666; }
 .control-dark:focus {
-  border-color: #6c757d;
-  box-shadow: 0 0 0 0.15rem rgba(108,117,125,.18);
+  border-color: var(--suas-blue);
+  box-shadow: 0 0 0 0.15rem rgba(44,79,99,0.25);
 }
 
 /* Buttons */
 .btn-soft {
   width: 100%;
-  background: #1a1d21;
-  color: #eaecef;
-  border: 1px solid #3b4048;
+  background: var(--suas-red);
+  color: #fff;
+  border: none;
   border-radius: 10px;
   padding: 9px 12px;
   cursor: pointer;
-  transition: background .15s ease, border-color .15s ease;
+  transition: background .15s ease;
 }
-.btn-soft:hover { background: #262a2f; border-color: #555c66; }
+.btn-soft:hover { background: var(--suas-orange); }
 .btn-soft.wide { width: 100%; }
 .btn-xs { padding: 6px 10px; border-radius: 8px; }
 
@@ -67,14 +67,14 @@
 
 /* Right panel */
 .panel {
-  background: #121416;
-  border: 1px solid #2b2f36;
+  background: var(--suas-surface);
+  border: 1px solid var(--suas-border);
   border-radius: 8px;
   padding: 14px;
 }
 .panel-header {
   font-size: 0.95rem;
-  color: #cfd3d7;
+  color: var(--suas-blue);
   margin-bottom: 10px;
 }
 
@@ -87,13 +87,14 @@
   align-items: center;
 }
 .thead {
-  color: #b9bec4;
-  border-bottom: 1px solid #2b2f36;
+  color: var(--suas-blue);
+  border-bottom: 1px solid var(--suas-border);
   padding: 8px 0 10px;
 }
 .trow {
   padding: 10px 0;
-  border-bottom: 1px dashed #2b2f36;
+  border-bottom: 1px dashed var(--suas-border);
+  color: var(--suas-text);
 }
 .th, .td { min-width: 0; }
 .text-end { text-align: right; }
