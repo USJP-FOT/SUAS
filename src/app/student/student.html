@@ -41,7 +41,7 @@
         <input type="text" class="form-control form-control-dark" placeholder="e.g. 1024">
       </div>
 
-      <button type="button" class="btn btn-outline-light btn-sm">Search</button>
+      <button (click)="serch()" type="button" class="btn btn-outline-light btn-sm">Search</button>
       <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
     </div>
 
@@ -62,26 +62,19 @@
         </thead>
         <tbody>
           <!-- sample rows -->
+          @for (student of studentList; track $index) {
           <tr>
-            <td>1</td>
-            <td>Ava Stone</td>
-            <td>avaschool.edu</td>
-            <td>2024/25</td>
-            <td>555-0101</td>
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.academicYear }}</td>
+            <td>{{ student.phoneNumber }}</td>
             <td class="text-end">
               <button class="btn btn-sm btn-outline-light">Edit</button>
             </td>
           </tr>
-          <tr>
-            <td>2</td>
-            <td>Liam Park</td>
-            <td>liamschool.edu</td>
-            <td>2023/24</td>
-            <td>555-0102</td>
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-light">Edit</button>
-            </td>
-          </tr>
+          }
+
         </tbody>
       </table>
     </div>
