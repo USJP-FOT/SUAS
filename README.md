@@ -46,10 +46,8 @@ All controllers use `@CrossOrigin`, enabling cross-origin requests from browser 
 
 ## Tech Stack
 
-* Java 17+ (recommended)
-* Spring Boot (Web MVC)
-* Lombok (logging & constructors)
-* Maven or Gradle
+* Anguller (recommended)
+* Node
 
 ---
 
