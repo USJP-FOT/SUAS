@@ -9,6 +9,9 @@ import { ApplicationConstant } from "../../ApplicationConstant";
 export class StudentServiceImpl implements StudentService {
 
     constructor(private http: HttpClient) { }
+    findStudentById(): Observable<StudentDTO> {
+        throw new Error("Method not implemented.");
+    }
 
 
 

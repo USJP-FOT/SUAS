@@ -191,6 +191,9 @@ No authentication is enforced in the provided code. Add Spring Security/JWT if n
 * **GET** `/all` — List students
   **Response:** `200 OK` → `Student[]`
 
+* **GET** `/find` — Find by ID
+  **Response:** `200 OK` → `Student`  
+
 * **DELETE** `/delete?id={id}` — Delete student
   **Response:** `204 No Content`
 
